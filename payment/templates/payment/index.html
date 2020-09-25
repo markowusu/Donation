@@ -1,0 +1,131 @@
+{% extends 'payment/base.html'%}
+
+{% block content %}
+<!--  This is the container for the page image  -->
+    <!-- <div class="container "> -->
+      {% load static %}
+        <div class="jumbotron hero-image " style="padding-top: 20px;">
+            <div class="hero-text   text-light ">
+                Help get clean water for<br>
+                <b class="font-weight-bolder"> local communities!</b> <br>
+                <div class="razorpay-embed-btn " data-url="https://pages.razorpay.com/pl_FchNAi8BSIWOgX/view" data-text="Donate Now" data-color="#528FF0" data-size="small">
+                    <script>
+                      (function(){
+                        var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
+                        if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
+                        s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
+                        rzp && rzp.init && rzp.init()}})();
+                    </script>
+                  </div>
+                      
+                <!-- <button class="btn btn-info btn-outline-light ">
+                    <span class="lead">
+                        Donate
+                    </span> 
+                </button> -->
+
+
+    <!-- </div> -->
+
+</div>
+</div>
+
+
+
+    <div class="jumbotron text-light" style="background-color: #007acc;margin-top: -3%;z-index: 6;"> 
+        <div class="row" id="aboutid" style="margin-top: -4%;">
+        <div class="col-ms-12">
+        <p class="font-weight-bolder mx-auto about-3 lead " style="text-align: center;font-size: xx-large;margin-top: -1;">About Us</p>
+        <p class="about-content lead font-weight-bold">
+            Marcos Charity is a not-for profit organization, we strive hard to provide clean and healthy drinking water for rural communities.
+            Since 2019, Marcos Charity has been instrumental in providing clean and healthy drinking water to 
+            rural communities. We have helped 13 local communities get clean water, and we look forward to helping more local communities. 
+        </p>
+    </div>
+</div>
+</div>
+
+<!-- <a class="nav-link  btn btn-warning small font-weight-bold"  onclick="trackOnClick()" id="rzp-btn" target="_blank" href="https://pages.razorpay.com/pl_FchNAi8BSIWOgX/view"  style="border-radius: 20px;">Donate</a> -->
+
+
+
+<div class="card-deck">
+<div class="card" style="border: none;z-index: 2;">
+  <img src="{% static 'payment/operatios.jpg' %}" class="card-img-top" alt="..." style="border-radius: 50%;">
+  <div class="card-body">
+    <h5 class="card-title">Manager</h5><hr>
+    <p class="card-text lead">" Water is life! Getting to help communities with clean water can help prevent deaths that result from 
+        water-borne diseases. Giving local communities access to clean water can reduce water-borne diseases substantially.
+        With a collective effort towards this project, we can put smiles on the faces of thousands of poeple.
+        "</p>
+    <p class="card-text"><small class="text-muted">Last updated 1 month ago</small></p>
+  </div>
+</div>
+<div class="card  " style="border: none;z-index: 2;" >
+
+  <img src="{% static 'payment/manager.jpg' %}" class="card-img-top" alt="manager img"  style="border-radius: 50%; height:50%">
+  
+  <div class="card-body">
+    <h5 class="card-title">Head of operations </h5><hr>
+    <p class="card-text lead">" We support communities get clean and healthy drinking water. Your donation can provide 
+        about 500 local communities. we count on your contributions to make this happen."</p>
+    <p class="card-text"><small class="text-muted">Last updated i month ago</small></p>
+  </div>
+</div>
+<div class="card " style="border: none;z-index: 5;">
+  <img src="{% static 'payment/volunteer.jpg'%}" class="card-img-top" alt="..." style="border-radius: 50%;"> 
+  <div class="card-body">
+    <h5 class="card-title">Volunteer</h5><hr>
+    <p class="card-text lead ">" Being part of three successful projects, my vision has been given a new dimension. I have come to seee how urgent
+        the situation is. There are lot of local communities out there that need our support- we providing them with clean and healthy drinking water."</p>
+    <p class="card-text"><small class="text-muted">Last updated 22 days ago</small></p>
+  </div>
+</div>
+</div>
+
+
+
+
+<!-- 
+<div id="paypal-button-container"></div>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
+<script>
+paypal.Buttons({
+style: {
+  shape: 'pill',
+  color: 'blue',
+  layout: 'vertical',
+  label: 'paypal',
+  
+},
+createOrder: function(data, actions) {
+  return actions.order.create({
+      purchase_units: [{
+          amount: {
+              value: '2'
+          }
+      }]
+  });
+},
+onApprove: function(data, actions) {
+  return actions.order.capture().then(function(details) {
+      alert('Transaction completed by ' + details.payer.name.given_name + '!');
+  });
+}
+}).render('#paypal-button-container');
+</script> -->
+<hr>
+<footer class="lead text-dark" id="footer">
+<div class="row">
+<div class="col-ms-12 mx-auto">
+    <p >
+             &nbsp;Copyright&copy; 2020-2021 <br>
+        Designed by Mark Owusu Ayim with<span style="color: red;"> ❤️</span> <br>
+        Web developer intern at The Sparks Foundation.
+    </p>
+</div>
+</div>
+</footer>
+
+
+{% endblock %}

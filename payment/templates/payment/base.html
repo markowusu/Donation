@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donations</title>
+    <!-- favicon insersion -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'payment/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'payment/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'payment/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'payment/site.webmanifest'% }">
+    <!-- end Favicon -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{% static 'payment/pay.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+<!--  Navbar for the page  -->
+
+<nav class="navbar navbar-expand-lg  navbar-light bg-light" id="nav-design">
+    <a class="navbar-brand" href="#"><img src="{% static 'payment/favicon-32x32.png'%}" alt="MacosLife" draggable="false"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="#aboutid">About Us </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link  btn btn-warning text-dark  btn-outline-light small font-weight-bold"  onclick="trackOnClick()" id="rzp-btn" target="_blank" href="https://pages.razorpay.com/pl_FchNAi8BSIWOgX/view"  style="border-radius: 20px;">Donate</a>
+
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+  {% block content%}
+
+
+
+  
+  {% endblock %}
+
+  </body>
+  </html>
