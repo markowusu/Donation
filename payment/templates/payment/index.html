@@ -3,7 +3,7 @@
 {% block content %}
 <!--  This is the container for the page image  -->
     <!-- <div class="container "> -->
-      {% load static %}
+
         <div class="jumbotron hero-image " style="padding-top: 20px;">
             <div class="hero-text   text-light ">
                 Help get clean water for<br>
@@ -31,7 +31,7 @@
 </div>
 
 
-
+{%load static %}
     <div class="jumbotron text-light" style="background-color: #007acc;margin-top: -3%;z-index: 6;"> 
         <div class="row" id="aboutid" style="margin-top: -4%;">
         <div class="col-ms-12">
@@ -51,7 +51,7 @@
 
 <div class="card-deck">
 <div class="card" style="border: none;z-index: 2;">
-  <img src="{% static 'payment/operatios.jpg' %}" class="card-img-top" alt="..." style="border-radius: 50%;">
+  <img src="{%static 'payment/operatios.jpg' %}" class="card-img-top" alt="..." style="border-radius: 50%;">
   <div class="card-body">
     <h5 class="card-title">Manager</h5><hr>
     <p class="card-text lead">" Water is life! Getting to help communities with clean water can help prevent deaths that result from 
@@ -63,7 +63,7 @@
 </div>
 <div class="card  " style="border: none;z-index: 2;" >
 
-  <img src="{% static 'payment/manager.jpg' %}" class="card-img-top" alt="manager img"  style="border-radius: 50%; height:50%">
+  <img src="{%static 'payment/manager.jpg' %}" class="card-img-top" alt="manager img"  style="border-radius: 50%; height:50%">
   
   <div class="card-body">
     <h5 class="card-title">Head of operations </h5><hr>
@@ -73,7 +73,7 @@
   </div>
 </div>
 <div class="card " style="border: none;z-index: 5;">
-  <img src="{% static 'payment/volunteer.jpg'%}" class="card-img-top" alt="..." style="border-radius: 50%;"> 
+  <img src="{%static 'payment/volunteer.jpg'%}" class="card-img-top" alt="..." style="border-radius: 50%;"> 
   <div class="card-body">
     <h5 class="card-title">Volunteer</h5><hr>
     <p class="card-text lead ">" Being part of three successful projects, my vision has been given a new dimension. I have come to seee how urgent
