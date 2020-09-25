@@ -25,7 +25,7 @@ SECRET_KEY = '_znrr6wzbwy3^rsl!cl*cvj0&5k3lri3b#h+&9qh#%hoa!tp&7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [ '0.0.0.0', '127.0.0.1']
+ALLOWED_HOSTS = [ '0.0.0.0', '127.0.0.1','macoslife.herokuapp.com']
 
 
 # Application definition
