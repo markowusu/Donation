@@ -1,6 +1,5 @@
-settings.py
+donate/settings.py
 db.sqlite3
-admin.py
-__pycache__
-wsgi.py
+payment/admin.py
+donate/wsgi.py
 manage.py
